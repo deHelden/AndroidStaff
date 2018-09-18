@@ -8,14 +8,14 @@ import java.util.*
 
 class SecondActivity : AppCompatActivity() {
 
+    companion object {
+        const val TOTAL_COUNT = "total_count"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
         showRandomNumber()
-    }
-
-    companion object {
-        const val TOTAL_COUNT = "total_count"
     }
 
     fun showRandomNumber(){
@@ -37,5 +37,9 @@ class SecondActivity : AppCompatActivity() {
         // Substitute the max value into the string resource
         // for the heading, and update the heading
         textview_label.text = getString(R.string.random_heading, count)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
     }
 }

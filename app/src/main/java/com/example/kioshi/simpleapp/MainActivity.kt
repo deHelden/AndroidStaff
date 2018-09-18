@@ -40,9 +40,6 @@ class MainActivity : AppCompatActivity() {
         // Create an Intent to start the second activity
         val randomIntent = Intent(this, SecondActivity::class.java)
 
-        // Start the new activity.
-        startActivity(randomIntent)
-
         // Get the current value of the text view.
         val countString = textView.text.toString()
 
