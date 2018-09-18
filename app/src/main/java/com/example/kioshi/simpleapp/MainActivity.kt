@@ -1,13 +1,10 @@
 package com.example.kioshi.simpleapp
 
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -17,21 +14,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         button3.setOnClickListener {
-            button3.setBackgroundColor(Color.RED)
-            val random = Random()
-
-            var color: Int = Color.argb(255, random.nextInt(256),random.nextInt(256),random.nextInt(256))
-            button3.setBackgroundColor(color)
-
-            val myToast = Toast.makeText(this, "color changed! >_<", (Toast.LENGTH_SHORT)/2).show()
+            val tmp = button3.background
+            button3.background = button5.background
+            button5.background = tmp
         }
     }
 
     fun countMe(view: View){
-        // Get the text view
-        // Don't need cuz kotlinx...
-        // val showCountTextView = findViewById<TextView>(R.id.textView) as TextView
-
         // Get the value of the text View
         val countString = textView.text.toString()
 
