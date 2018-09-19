@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">SimpleApp</string>
-    <string name="hello_world_text">0</string>
+    <string name="random_number">0</string>
     <string name="Left">Color</string>
     <string name="Middle">Count</string>
     <string name="Right">Random</string>
     <string name="random_heading">Here is a random number between 0 and %1d.</string>
+    <string name="maintextview">Main Activity</string>
+    <string name="mainbutton">randomizer</string>
+    <string name="flagsButton">Flags</string>
+    <string name="filler">Here will be flags and some functionality</string>
 </resources>

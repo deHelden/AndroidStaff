@@ -7,4 +7,6 @@
     <color name="buttonBackground">#BBDEFB</color>
     <color name="buttonBackground2">#1aff00</color>
     <color name="screenBackground2">#26C6DA</color>
+    <color name="flagScreenColor">#00e6ff</color>
+
 </resources>
